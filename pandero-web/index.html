@@ -2201,6 +2201,30 @@ var gf_global = {"gf_currency_config":{"name":"D\u00f3lar Americano","symbol_lef
 
 
 <script type="text/javascript">
+
+$(document).ready(function() {	
+	console.log('in readyyy!!!');
+
+	
+function hideChatElement(){
+	if (!document.getElementById('s1chat_welcome_wrapper')) {	   
+	} else {
+		console.log('elemento detectado');
+		document.getElementById('s1chat_welcome_wrapper').style.visibility = 'hidden';
+	}
+}
+	
+setTimeout( function() { hideChatElement() }, 1);
+setTimeout( function() { hideChatElement() }, 10);
+setTimeout( function() { hideChatElement() }, 50);
+setTimeout( function() { hideChatElement() }, 100);
+setTimeout( function() { hideChatElement() }, 500);
+setTimeout( function() { hideChatElement() }, 1000);
+setTimeout( function() { hideChatElement() }, 2000);
+setTimeout( function() { hideChatElement() }, 3000);
+
+});
+
       /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
       (function(d, m){
         var kommunicateSettings = {"appId":"3d0dff8e6b35143e70dfd1575bad4a1d0","popupWidget":true,"automaticChatOpenOnNavigation":true};
