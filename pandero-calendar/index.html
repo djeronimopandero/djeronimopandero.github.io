@@ -296,9 +296,12 @@
                                     <div class="content-select">
                                         <select class="" id="funcionario-id" name="">
                                             <option value="0">Funcionaria</option>
-											<option value="1">Débora Jerónimo</option>
-											<option value="2">Frank Jarrin</option>
-											<option value="3">Sofia Corbetto</option>
+											<option value="1">Sophia Corbetto</option>
+											<option value="2">Maria Belen Torrejon</option>
+											<option value="3">Lissette Nolasco</option>
+											<option value="4">Karol Vargas</option>
+											<option value="5">Lucía Gutierrez</option>
+											<option value="6">Francys Pachas</option>
 										</select>
                                     </div>
                                 </div>                                
@@ -2007,21 +2010,30 @@ $('.no-asociado-tipo input').change(function() {
 })
 </script>
 
-<script src="js/jquery.js"></script>
 <script type="text/javascript">
 	function derivarCalendar(){
-		var url = 'https://calendly.com/djeronimo/60min';
+		var url = '';
 		var funcionarioId = document.getElementById('funcionario-id').value;
 		console.log('funcionarioId: '+funcionarioId);
-		if(funcionarioId=='1'){
-			url = 'https://calendly.com/djeronimo/60min';
+		if(funcionarioId=='0'){
+			alert('Seleccione un funcionario');
+		}else if(funcionarioId=='1'){
+			url = 'https://calendly.com/asociados/agenda-tu-cita-sophia-corbetto-clon';
 		}else if(funcionarioId=='2'){
-			url = 'https://calendly.com/fjarrin/60min';
+			url = 'https://calendly.com/mtorrejon/30min';
 		}else if (funcionarioId=='3'){
-			url = 'https://calendly.com/asociados/atencionalasociado';
+			url = 'https://calendly.com/lissette-nolasco/30min';
+		}else if (funcionarioId=='4'){
+			url = 'https://calendly.com/karol-vargasr/30min';
+		}else if (funcionarioId=='5'){
+			url = 'https://calendly.com/lucia-gutierrezv/30min';
+		}else if (funcionarioId=='6'){
+			url = 'https://calendly.com/francys-pachas/30min';
 		}
-		var win = window.open(url, '_blank');
-		win.focus();
+		if(url!=''){
+			var win = window.open(url, '_blank');
+			win.focus();
+		}
 	}
 </script>
 
