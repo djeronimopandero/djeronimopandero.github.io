@@ -298,6 +298,7 @@
                                             <option value="0">Funcionaria</option>
 											<option value="1">Débora Jerónimo</option>
 											<option value="2">Frank Jarrin</option>
+											<option value="3">Sofia Corbetto</option>
 										</select>
                                     </div>
                                 </div>                                
@@ -2016,6 +2017,8 @@ $('.no-asociado-tipo input').change(function() {
 			url = 'https://calendly.com/djeronimo/60min';
 		}else if(funcionarioId=='2'){
 			url = 'https://calendly.com/fjarrin/60min';
+		}else if (funcionarioId=='3'){
+			url = 'https://calendly.com/asociados/atencionalasociado';
 		}
 		var win = window.open(url, '_blank');
 		win.focus();
